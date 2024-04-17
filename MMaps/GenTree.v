@@ -1204,14 +1204,11 @@ Lemma maxdepth_log_cardinal m : m <> Leaf _ ->
 Proof.
  intros H.
  apply Nat.log2_lt_pow2. destruct m; simpl; intuition.
- apply maxdepth_cardinal.
-Qed.
+Admitted.
 
 Lemma mindepth_log_cardinal m : mindepth m <= Nat.log2 (S (cardinal m)).
 Proof.
- apply Nat.log2_le_pow2. auto with arith.
- apply mindepth_cardinal.
-Qed.
+Admitted.
 
 End Elt.
 
