@@ -1,7 +1,7 @@
 From Coq Require Import List String ZArith POrderedType FMaps FMapAVL.
 From Tries.MMaps Require RBT.
 From Tries Require Import String2pos StringOrder PositiveOrder.
-From Tries Require Original Canonical Sigma Node01 GADT Patricia CharTrie.
+From Tries Require Original Canonical Sigma Record PrimitiveRecord Node01 GADT Patricia CharTrie.
 
 Local Open Scope string_scope.
 Local Open Scope list_scope.
@@ -98,6 +98,8 @@ End Test.
 Module TestOriginal := Test Original.PTree.
 Module TestCanonical := Test Canonical.PTree.
 Module TestSigma := Test Sigma.PTree.
+Module TestRecord := Test Record.PTree.
+Module TestPrimitiveRecord := Test PrimitiveRecord.PTree.
 Module TestNode01 := Test Node01.PTree.
 Module TestGADT := Test GADT.PTree.
 Module TestPatricia := Test Patricia.PTree.
